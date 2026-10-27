@@ -1,0 +1,10 @@
+def reverse_string(s):
+    return s[::-1]
+
+def count_vowels(s):
+    vowels = 'aeiouAEIOU'
+    return sum(1 for ch in s if ch in vowels)
+
+s = input('Enter a string: ')
+print(f'Reversed String : {reverse_string(s)}')
+print(f'Number of Vowels: {count_vowels(s)}')
