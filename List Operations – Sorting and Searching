@@ -1,0 +1,18 @@
+n = int(input('Enter number of elements: '))
+lst = []
+for i in range(n):
+    lst.append(int(input(f'Enter element {i+1}: ')))
+
+print(f'Original List : {lst}')
+lst.sort()
+print(f'Sorted List   : {lst}')
+
+key = int(input('Enter element to search: '))
+found = False
+for idx, val in enumerate(lst):
+    if val == key:
+        print(f'{key} found at index {idx}')
+        found = True
+        break
+if not found:
+    print(f'{key} not found in the list')
