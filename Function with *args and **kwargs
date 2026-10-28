@@ -1,0 +1,16 @@
+def sum_all(*args):
+    total = sum(args)
+    print(f'Numbers: {args}')
+    print(f'Sum: {total}')
+    return total
+
+def display_info(**kwargs):
+    print('\nStudent Information:')
+    for key, value in kwargs.items():
+        print(f'  {key}: {value}')
+
+# Using *args
+sum_all(10, 20, 30, 40, 50)
+
+# Using **kwargs
+display_info(name='Alice', age=20, branch='CSE', cgpa=9.1)
