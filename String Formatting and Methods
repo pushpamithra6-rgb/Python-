@@ -1,0 +1,18 @@
+# String Methods and Formatting
+s = input('Enter a sentence: ')
+
+print(f'\nOriginal   : {s}')
+print(f'Uppercase  : {s.upper()}')
+print(f'Lowercase  : {s.lower()}')
+print(f'Title Case : {s.title()}')
+print(f'Word Count : {len(s.split())}')
+print(f'Char Count : {len(s)}')
+print(f'Stripped   : {s.strip()}')
+
+word = input('Enter word to replace: ')
+new_word = input('Replace with: ')
+print(f'After Replace: {s.replace(word, new_word)}')
+
+words = s.split()
+print(f'Words List : {words}')
+print(f'Joined(-): {"-".join(words)}')
